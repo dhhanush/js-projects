@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+	<div class="header">
+		<a href="/" class="logo">Title Of Project</a>
+	</div>
+
+
+	<div data-barba="wrapper">
+	<div data-barba="container" data-barba-namespace="home">
+
+	<div asscroll-container>
+		<div class="scroll-wrap">
+		<!-- BEGIN content -->
+		<div class="content">
+
+      {% for post in collections.posts reversed %}
+      <!-- BEGIN item -->
+      <a href="{{ post.url }}" class="item">
+        <img src="/img/{{post.data.image}}" class="js-image" alt="">
+        <h2>{{ post.data.title }}</h2>
+        <p>{{post.data.description}}</p>
+      </a>
+      <!-- END item -->
+      {% endfor %}
+			
+		</div>
+		<!-- END content -->
+		</div>
+	</div>
+
+	</div>
+	</div>
+	<!-- end barba -->
+
+	<div class="curtain"></div>
+	<div id="container"></div>
+	<script src="/js/app.js"></script> 
+
+</body>
+</html>

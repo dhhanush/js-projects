@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body class="b-inside">
+	<div class="header">
+		<a href="/" class="logo">Title Of Project</a>
+	</div>
+
+
+	<div data-barba="wrapper">
+	<div data-barba="container" data-barba-namespace="inside">
+
+	<div asscroll-container>
+		<div class="scroll-wrap">
+		<!-- BEGIN content -->
+		<div class="inside">
+			<!-- BEGIN item -->
+			<div class="single">
+				<div class="single__top" style="background-image: url(/img/{{image}})">
+				</div>
+				<div class="single__content">
+					<h1>{{ title }}</h1>
+					{{ content }}
+
+					<!-- BEGIN footer -->
+					<footer class="footer">
+						<p>&copy; 2021</p>
+						<p>
+							This page was made for <a href="https://www.awwwards.com/academy/course/creating-a-simple-portfolio-website-with-webgl-and-barba-js">Creating a simple portfolio website with WebGL and Barba.js</a>
+							<br>Wish you a good day! =)</p>
+					</footer>
+					<!-- END footer -->
+				</div>
+				
+			</div>
+			<!-- END item -->
+			
+			
+		</div>
+		<!-- END inside -->
+		</div>
+	</div>
+	<!-- scroll divs -->
+
+
+	</div>
+	</div>
+	<!-- end barba -->
+	<div class="curtain"></div>
+	<div id="container"></div>
+	<script src="/js/app.js"></script> 
+
+</body>
+</html>
